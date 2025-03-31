@@ -1,0 +1,56 @@
+/* Primary colors */
+:root {
+  --primary: #f97316; /* orange-500 */
+  --primary-light: #fdba74; /* orange-300 */
+  --primary-dark: #c2410c; /* orange-700 */
+
+  /* Gray shades */
+  --grey: #EEF0F0;
+
+  /* Transitions */
+  --transition-base: all 0.2s ease-in-out;
+
+  /* Breakpoints (matching Tailwind defaults) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* Z-indices */
+  --z-index-dropdown: 10;
+  --z-index-modal-backdrop: 40;
+  --z-index-modal: 50;
+}
+
+/* Slide-in-right animation */
+.slide-in-right {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-in-right--open {
+  transform: translateX(0);
+}
+
+/* Responsive container */
+.responsive-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
