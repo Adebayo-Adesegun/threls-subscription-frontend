@@ -2,7 +2,7 @@ import axios from 'axios'
 import { userToken } from '~/services/auth/user';
 
 const BASE_URL =
-  (import.meta.env.VITE_BASE_URL as string) ?? "http://localhost:8090";
+  (import.meta.env.VITE_BASE_URL as string) ?? "https://58d9-102-207-252-4.ngrok-free.app";
 const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
